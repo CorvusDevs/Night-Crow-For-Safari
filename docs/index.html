@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night Crow — Dark theme for every website on Safari</title>
+    <meta name="description" content="Night Crow brings a fast, customizable dark mode to every website on Safari. Per-site rules, scheduling, and iCloud sync. macOS &amp; iOS.">
+    <meta property="og:title" content="Night Crow">
+    <meta property="og:description" content="Dark theme for every website on Safari.">
+    <meta property="og:image" content="og-image.png">
+    <link rel="icon" type="image/png" href="icon.png">
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #0e0a22;
+            --bg2: #181030;
+            --fg: #ebe7f5;
+            --muted: #9893ab;
+            --accent: #9b6cff;
+        }
+        * { box-sizing: border-box; }
+        html, body { margin: 0; padding: 0; }
+        body {
+            background: linear-gradient(180deg, var(--bg), var(--bg2));
+            color: var(--fg);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+            font-size: 17px;
+            line-height: 1.55;
+            min-height: 100vh;
+        }
+        main { max-width: 720px; margin: 0 auto; padding: 80px 24px; }
+        header { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
+        header img { width: 64px; height: 64px; border-radius: 14px; }
+        h1 { font-size: 36px; margin: 0; letter-spacing: -0.02em; }
+        h1 .tag { color: var(--muted); font-weight: 400; font-size: 16px; display: block; }
+        h2 { font-size: 22px; margin-top: 48px; }
+        ul { padding-left: 1.2em; }
+        li { margin: 6px 0; }
+        a { color: var(--accent); }
+        .cta { display: inline-block; background: var(--accent); color: #fff; padding: 12px 22px; border-radius: 10px; text-decoration: none; font-weight: 600; margin-top: 12px; }
+        footer { margin-top: 80px; padding-top: 24px; border-top: 1px solid #2a2538; color: var(--muted); font-size: 14px; }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <img src="icon.png" alt="Night Crow icon">
+            <h1>Night Crow<span class="tag">Dark theme for every website on Safari</span></h1>
+        </header>
+
+        <p>Night Crow brings a fast, customizable dark mode to every website on Safari. Per-site rules, scheduling, and iCloud sync. macOS &amp; iOS.</p>
+
+        <h2>Features</h2>
+        <ul>
+            <li><strong>Filter mode</strong> — instant CSS-based inversion with re-inverted media</li>
+            <li><strong>Filter+</strong> — SVG color-matrix variant for better photo fidelity</li>
+            <li><strong>Static mode</strong> — pick your own background, text, and link colors</li>
+            <li><strong>Dynamic mode</strong> <em>(coming in v2)</em> — per-element CSS analysis and inversion</li>
+            <li><strong>Per-site rules</strong> — enable, disable, or tune any setting on individual sites</li>
+            <li><strong>Scheduler</strong> — match your system appearance, follow a time window, or use sunrise/sunset</li>
+            <li><strong>iCloud sync</strong> — settings follow you across Safari devices</li>
+            <li><strong>Made for Safari</strong> — native popup, native onboarding, native feedback loop</li>
+        </ul>
+
+        <h2>Get it</h2>
+        <p><a class="cta" href="#">Available on the App Store</a></p>
+
+        <h2>Support</h2>
+        <p>Found a bug or want a feature? <a href="https://github.com/CorvusDevs/night-crow/issues">Open an issue on GitHub</a>.</p>
+
+        <footer>
+            © CorvusDevs. Night Crow is a closed-source Safari Web Extension.
+        </footer>
+    </main>
+</body>
+</html>
