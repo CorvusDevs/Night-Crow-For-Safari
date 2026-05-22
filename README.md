@@ -19,4 +19,4 @@ Available on the App Store for macOS and iOS.
 
 Night Crow For Safari is closed-source proprietary software. © CorvusDevs. All rights reserved.
 
-This repository serves only the documentation site at <https://corvusdevs.github.io/night-crow-for-safari/>. The application source lives in a separate private repository.
+This repository serves only the documentation site at <https://corvusdevs.github.io/Night-Crow-For-Safari/>. The application source lives in a separate private repository.
