@@ -1,4 +1,4 @@
-# Night Crow
+# Night Crow For Safari
 
 A dark theme for every website on Safari. Fast, customizable, with per-site rules and scheduling.
 
@@ -17,6 +17,6 @@ Available on the App Store for macOS and iOS.
 
 ## License
 
-Night Crow is closed-source proprietary software. © CorvusDevs. All rights reserved.
+Night Crow For Safari is closed-source proprietary software. © CorvusDevs. All rights reserved.
 
-This repository serves only the documentation site at <https://corvusdevs.github.io/night-crow/>. The application source lives in a separate private repository.
+This repository serves only the documentation site at <https://corvusdevs.github.io/night-crow-for-safari/>. The application source lives in a separate private repository.
