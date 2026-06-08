@@ -3,13 +3,27 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Night Crow For Safari — Dark theme for every website</title>
+    <title>Night Crow For Safari: Dark theme for every website</title>
     <meta name="description" content="Night Crow For Safari brings a fast, customizable dark mode to every website. Per-site rules, scheduling, and iCloud sync. macOS &amp; iOS.">
     <meta property="og:title" content="Night Crow For Safari">
     <meta property="og:description" content="Dark theme for every website on Safari.">
     <meta property="og:image" content="og-image.png">
     <link rel="icon" type="image/png" href="icon.png">
     <style>
+        /* ac-no-horizontal-scroll v1 */
+        html, body {
+            overflow-x: clip;
+            max-width: 100%;
+        }
+        img, video, iframe {
+            max-width: 100%;
+            height: auto;
+        }
+        pre, table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
         :root {
             color-scheme: dark;
             --bg: #0e0a22;
@@ -48,18 +62,17 @@
             <h1>Night Crow For Safari<span class="tag">Dark theme for every website</span></h1>
         </header>
 
-        <p>Night Crow For Safari brings a fast, customizable dark mode to every website you visit. Per-site rules, scheduling, and iCloud sync. macOS &amp; iOS.</p>
+        <p>Night Crow For Safari brings a smart, customizable dark mode to every website you visit. Dynamic per-site color remapping, per-site rules, and scheduling. macOS &amp; iOS.</p>
 
         <h2>Features</h2>
         <ul>
-            <li><strong>Filter mode</strong> — instant CSS-based inversion with re-inverted media</li>
-            <li><strong>Filter+</strong> — SVG color-matrix variant for better photo fidelity</li>
-            <li><strong>Static mode</strong> — pick your own background, text, and link colors</li>
-            <li><strong>Dynamic mode</strong> <em>(coming in v2)</em> — per-element CSS analysis and inversion</li>
-            <li><strong>Per-site rules</strong> — enable, disable, or tune any setting on individual sites</li>
-            <li><strong>Scheduler</strong> — match your system appearance, follow a time window, or use sunrise/sunset</li>
-            <li><strong>iCloud sync</strong> — settings follow you across Safari devices</li>
-            <li><strong>Made for Safari</strong> — native popup, native onboarding, native feedback loop</li>
+            <li><strong>Dynamic mode</strong>: reads each site's own colors and rebuilds them dark, so photos stay true and text stays readable. The default and best-looking option.</li>
+            <li><strong>Filter mode</strong>: instant CSS-based inversion with re-inverted media</li>
+            <li><strong>Filter+</strong>: SVG color-matrix variant for better photo fidelity</li>
+            <li><strong>Static mode</strong>: pick your own background, text, and link colors</li>
+            <li><strong>Per-site rules</strong>: enable, disable, or tune any setting on individual sites</li>
+            <li><strong>Scheduler</strong>: match your system appearance, follow a time window, or use sunrise/sunset</li>
+            <li><strong>Made for Safari</strong>: native popup, native onboarding, native feedback loop</li>
         </ul>
 
         <h2>Get it</h2>
