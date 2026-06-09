@@ -53,7 +53,13 @@
         a { color: var(--accent); }
         .cta { display: inline-block; background: var(--accent); color: #fff; padding: 12px 22px; border-radius: 10px; text-decoration: none; font-weight: 600; margin-top: 12px; }
         footer { margin-top: 80px; padding-top: 24px; border-top: 1px solid #2a2538; color: var(--muted); font-size: 14px; }
-    </style>
+    
+        /* ac-footer-mobile v1 */
+        @media (max-width: 720px) {
+            body { min-height: 0; }
+            footer { padding-bottom: 24px; padding-top: 24px; }
+        }
+</style>
 </head>
 <body>
     <main>
