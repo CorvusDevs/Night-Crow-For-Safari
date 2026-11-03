@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Night Crow, La oscuridad, bien hecha</title>
     <meta name="description" content="Un modo oscuro nativo e inteligente para todos los sitios web en Safari. Remapeo de colores dinámico que mantiene las fotos fieles y el texto legible, con re…">
     <link rel="canonical" href="https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/es/">
@@ -83,21 +83,27 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
     <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Night Crow For Safari",
-        "operatingSystem": "macOS, iOS, iPadOS",
-        "applicationCategory": "UtilitiesApplication",
-        "applicationSubCategory": "Browser Extension",
-        "description": "A smart, native dark mode for every website in Safari. Dynamic color remapping, per-site rules, presets, and sunset-to-sunrise scheduling.",
-        "image": "https://corvusdevs.github.io/Night-Crow-For-Safari/icon.png",
-        "url": "https://corvusdevs.github.io/Night-Crow-For-Safari/",
-        "offers": { "@type": "Offer", "price": "0.99", "priceCurrency": "USD" },
-        "author": { "@type": "Organization", "name": "CorvusDevs" }
-    }
-    </script>
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Night Crow For Safari",
+  "operatingSystem": "macOS, iOS, iPadOS",
+  "applicationCategory": "UtilitiesApplication",
+  "applicationSubCategory": "Browser Extension",
+  "description": "A smart, native dark mode for every website in Safari. Dynamic color remapping, per-site rules, presets, and sunset-to-sunrise scheduling.",
+  "image": "https://corvusdevs.github.io/Night-Crow-For-Safari/icon.png",
+  "url": "https://corvusdevs.github.io/Night-Crow-For-Safari/",
+  "offers": {
+    "@type": "Offer",
+    "price": "0.99",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "CorvusDevs"
+  },
+  "softwareVersion": "1.0.3"
+}</script>
     <style>
         /* ac-no-horizontal-scroll v1 */
         html, body { overflow-x: clip; max-width: 100%; }
@@ -225,7 +231,11 @@
             footer.site { padding-bottom: 24px; }
             .grid { grid-template-columns: 1fr; }
         }
-    </style>
+    /* accessibility-contrast v1 */
+.cta:not(.secondary),.stepnum{color:#130b24}
+/* accessibility-contrast:end */
+</style>
+  <link rel="stylesheet" href="../../gallery.css">
 </head>
 <body>
     <div class="lang-wrap" id="langWrap">
@@ -261,7 +271,10 @@
             </div>
         </section>
 
-        <section class="wrap block" id="features">
+        <!-- OFFICIAL-GALLERY:START -->
+<section class="official-gallery" aria-labelledby="official-gallery-title"><h2 id="official-gallery-title">Capturas de pantalla</h2><div class="official-gallery-grid"><figure><a href="../../assets/gallery/mac-1.jpg"><img lang="en" src="../../assets/gallery/mac-1.jpg" alt="Night Crow For Safari: Light and dark website comparison (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Light and dark website comparison</span></figcaption></figure><figure><a href="../../assets/gallery/mac-2.jpg"><img lang="en" src="../../assets/gallery/mac-2.jpg" alt="Night Crow For Safari: Theming modes (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Theming modes</span></figcaption></figure><figure><a href="../../assets/gallery/mac-3.jpg"><img lang="en" src="../../assets/gallery/mac-3.jpg" alt="Night Crow For Safari: Per-site appearance settings (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Per-site appearance settings</span></figcaption></figure><figure><a href="../../assets/gallery/phone-4.jpg"><img lang="en" src="../../assets/gallery/phone-4.jpg" alt="Night Crow For Safari: Scheduling controls on iPhone (iPhone)" width="663" height="1440" loading="lazy" decoding="async"></a><figcaption><strong>iPhone</strong><span lang="en">Scheduling controls on iPhone</span></figcaption></figure><figure><a href="../../assets/gallery/pad-5.jpg"><img lang="en" src="../../assets/gallery/pad-5.jpg" alt="Night Crow For Safari: Appearance presets on iPad (iPad)" width="1080" height="1440" loading="lazy" decoding="async"></a><figcaption><strong>iPad</strong><span lang="en">Appearance presets on iPad</span></figcaption></figure></div></section>
+<!-- OFFICIAL-GALLERY:END -->
+<section class="wrap block" id="features">
             <div class="label" data-i18n="sec_features_label">Características</div>
             <h2 class="title" data-i18n="sec_features_title">La oscuridad, bien hecha</h2>
             <div class="grid">
@@ -381,5 +394,6 @@
     <script src="../../translations.js"></script>
     <script src="../../i18n.js"></script>
     <script src="../../carousel.js"></script>
+  <script src="../../gallery.js" defer></script>
 </body>
 </html>

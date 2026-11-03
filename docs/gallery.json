@@ -1,0 +1,66 @@
+{
+  "appStoreId": 6785353496,
+  "sourcePage": "https://apps.apple.com/us/app/night-crow-for-safari/id6785353496?uo=4",
+  "items": [
+    {
+      "platform": "Mac",
+      "description": "Light and dark website comparison",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/df/de/0c/dfde0caa-4852-6514-608f-9f3b98335699/01-hero_framed.png/2880x1800bb.jpg",
+      "sourceWidth": 2880,
+      "sourceHeight": 1800,
+      "asset": "assets/gallery/mac-1.jpg",
+      "width": 1440,
+      "height": 900,
+      "bytes": 166638,
+      "sha256": "1f09f97cecc0ee75d88dce2ba4f42da1f04c0d9c0eda529b5e3b6eccb8c6206b"
+    },
+    {
+      "platform": "Mac",
+      "description": "Theming modes",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7e/5f/9d/7e5f9d47-185d-fbac-837a-ffd142a20316/02-modes_framed.png/2880x1800bb.jpg",
+      "sourceWidth": 2880,
+      "sourceHeight": 1800,
+      "asset": "assets/gallery/mac-2.jpg",
+      "width": 1440,
+      "height": 900,
+      "bytes": 61226,
+      "sha256": "24028e41207922c9463e7cee45c4dfbb8b240679ffd287af68c15664cf6848f9"
+    },
+    {
+      "platform": "Mac",
+      "description": "Per-site appearance settings",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e6/af/b0/e6afb03f-1edf-37cf-47dd-076f8e5cfbdb/03-persite_framed.png/2880x1800bb.jpg",
+      "sourceWidth": 2880,
+      "sourceHeight": 1800,
+      "asset": "assets/gallery/mac-3.jpg",
+      "width": 1440,
+      "height": 900,
+      "bytes": 50090,
+      "sha256": "f56f9b7ce0c95b89bdbbcd3a3d47612387e17be3fc3b6ee1f6e3760c075fdaa7"
+    },
+    {
+      "platform": "iPhone",
+      "description": "Scheduling controls on iPhone",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d7/f2/ea/d7f2eada-13ef-4148-2517-93ad87cf5a43/04-schedule_framed.png/1320x2868bb.jpg",
+      "sourceWidth": 1320,
+      "sourceHeight": 2868,
+      "asset": "assets/gallery/phone-4.jpg",
+      "width": 663,
+      "height": 1440,
+      "bytes": 40718,
+      "sha256": "2546e33b95e6fac5181b7f8794b758cab1ad3650ebf02e33871ac188791f455f"
+    },
+    {
+      "platform": "iPad",
+      "description": "Appearance presets on iPad",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/eb/1b/30/eb1b3093-66f0-5d42-d54c-73f7a3d4955e/05-presets_framed.png/2064x2752bb.jpg",
+      "sourceWidth": 2064,
+      "sourceHeight": 2752,
+      "asset": "assets/gallery/pad-5.jpg",
+      "width": 1080,
+      "height": 1440,
+      "bytes": 82710,
+      "sha256": "338708146f2e21f99d6bdb36373b42b5c5374bffa27bc2ae33d06b3f796514c9"
+    }
+  ]
+}

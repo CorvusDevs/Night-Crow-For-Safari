@@ -1,0 +1,25 @@
+{
+  "slug": "Night-Crow-For-Safari",
+  "name": "Night Crow",
+  "appStoreId": 6785353496,
+  "version": "1.0.3",
+  "releaseDate": "2026-07-19T17:35:12Z",
+  "originalReleaseDate": "2026-07-10T07:00:00Z",
+  "platforms": [
+    "macOS",
+    "iPhone",
+    "iPad"
+  ],
+  "requirements": {
+    "macOS": "14.0",
+    "iOS": "17.0",
+    "iPadOS": "17.0"
+  },
+  "store": {
+    "kind": "app-store",
+    "label": "App Store",
+    "url": "https://apps.apple.com/app/id6785353496"
+  },
+  "metadataSource": "https://itunes.apple.com/lookup?id=6785353496&country=us",
+  "sourceCatalog": "https://corvusdevs.github.io/apps.json"
+}
