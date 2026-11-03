@@ -1,9 +1,11 @@
 /* Night Crow docs language picker + i18n.
    The T object is loaded from translations.js (must be included BEFORE this).
-   Choice persists in localStorage; default detected from ?lang=, stored value,
-   or navigator.language (in priority order). Ported from the CorvusDevs docs
+   Locale routes take precedence over ?lang=, stored value and navigator.language.
+   Choice persists in localStorage. Ported from the CorvusDevs docs
    i18n pattern. */
 (function () {
+  // Capture while this external script is executing, before DOMContentLoaded.
+  var ASSET_BASE = new URL('.', (document.currentScript && document.currentScript.src) || location.href);
   function init() {
     if (typeof T !== 'object') return; // translations.js not loaded
     var LS_KEY = 'nightcrow_docs_lang';
@@ -48,10 +50,10 @@
 
     function detectNavLang() {
       var navLang = navigator.language || 'en';
-      var PICKER = LANGS.map(function (l) { return l.code; }).filter(function (c) { return c !== 'auto'; });
-      if (PICKER.indexOf(navLang) !== -1) return navLang;
+      var exact = toPickerLang(navLang);
+      if (exact) return exact;
       var base = navLang.split('-')[0];
-      if (PICKER.indexOf(base) !== -1) return base;
+      if (toPickerLang(base)) return toPickerLang(base);
       return 'en';
     }
     function effectiveLang(sel) {
@@ -59,11 +61,23 @@
       return T[toStorageLang(sel)] ? sel : 'en';
     }
     function pickInitial() {
-      var fromQuery = new URL(location.href).searchParams.get('lang');
+      var url = new URL(location.href);
+      var route = url.pathname.match(/\/i18n\/([^/]+)(?:\/|$)/);
+      var fromPath = route && toPickerLang(decodeURIComponent(route[1]));
+      if (fromPath && fromPath !== 'auto' && T[toStorageLang(fromPath)]) return fromPath;
+      var fromQuery = toPickerLang(url.searchParams.get('lang'));
       if (fromQuery && (fromQuery === 'auto' || T[toStorageLang(fromQuery)])) return fromQuery;
-      var stored = localStorage.getItem(LS_KEY);
+      var stored = toPickerLang(localStorage.getItem(LS_KEY));
       if (stored && (stored === 'auto' || T[toStorageLang(stored)])) return stored;
       return 'auto';
+    }
+    // Static folders and older stored choices can use underscore storage keys.
+    function toPickerLang(lang) {
+      if (!lang) return null;
+      var aliases = { 'zh-CN': 'zh-Hans', 'zh-SG': 'zh-Hans', 'zh-TW': 'zh-Hant', 'zh-HK': 'zh-Hant' };
+      lang = aliases[lang] || lang;
+      var entry = LANGS.find(function (l) { return l.code === lang || toStorageLang(l.code) === lang; });
+      return entry ? entry.code : null;
     }
     // BCP-47 picker codes -> web-ext translations.js keys.
     function toStorageLang(lang) {
@@ -81,7 +95,7 @@
       } else {
         var img = document.createElement('img');
         img.className = 'lang-flag';
-        img.src = 'flags/' + lang.flag + '.svg';
+        img.src = new URL('flags/' + lang.flag + '.svg', ASSET_BASE).href;
         img.width = 18; img.height = 13; img.alt = '';
         container.appendChild(img);
       }
@@ -99,7 +113,7 @@
         if (dict[key]) nodes[i].innerHTML = dict[key];
       }
       var base = lang.split('_')[0].split('-')[0];
-      document.documentElement.lang = base;
+      document.documentElement.lang = lang;
       var RTL = { ar: 1, he: 1, fa: 1, ur: 1, yi: 1 };
       document.documentElement.dir = RTL[base] ? 'rtl' : 'ltr';
       var btn = document.getElementById('langBtn');

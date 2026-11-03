@@ -4,7 +4,7 @@
 
 # Night Crow For Safari
 
-**A smart, native dark mode for every website in Safari. Photos stay true, text stays readable.**
+**Dark mode, tuned to each site in Safari.**
 
 <p>
   <img src="https://img.shields.io/badge/macOS-14.0+-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS 14.0+">
@@ -52,7 +52,7 @@
 
 </div>
 
-A native **Safari Web Extension** for macOS, iOS, and iPadOS that brings a proper dark theme to every website. The Dynamic engine reads each site's own colors and rebuilds them dark instead of inverting the page, so photos and video keep their real colors while text stays readable. Per-site rules, five presets, custom CSS, and sunset-to-sunrise scheduling. Zero accounts, zero telemetry, zero tracking.
+A native **Safari Web Extension** for macOS, iOS, and iPadOS that adds a dark theme to permitted websites. The Dynamic engine reads each site's own colors and rebuilds them dark instead of inverting the page, so photos and video keep their real colors while text stays readable. Per-site rules, five presets, custom CSS, and sunset-to-sunrise scheduling. Zero accounts, zero telemetry, zero tracking.
 
 ## Contents
 
@@ -74,7 +74,7 @@ A native **Safari Web Extension** for macOS, iOS, and iPadOS that brings a prope
 - **Already-dark aware.** Sites that ship their own dark theme are detected and left alone, no double-darkening.
 - **Fine-tune sliders.** Brightness, contrast, sepia, and grayscale, globally or per site, right from the toolbar popup.
 - **Smart logo handling.** Dark logos and icons are analyzed pixel-by-pixel and inverted only when it helps; photos are never touched.
-- **Readable forms everywhere.** Inputs, dropdowns, checkboxes, scrollbars, and autofilled fields follow the theme instead of flashing white or yellow.
+- **Themed forms.** Inputs, dropdowns, checkboxes, scrollbars, and autofilled fields follow the theme instead of flashing white or yellow.
 - **Built for the modern web.** Themes embedded frames and web components, the parts of design-system sites most dark-mode tools miss.
 - **Accessibility-aware.** Respects Increase Contrast and forced-colors settings, and holds remapped text to a perceptual contrast floor.
 - **Backup and restore.** Export every setting to a file and import it on another Mac or after a reinstall.
@@ -113,7 +113,7 @@ A native **Safari Web Extension** for macOS, iOS, and iPadOS that brings a prope
 
 ## Privacy
 
-No accounts, no analytics, no telemetry, no tracking. Night Crow never phones home. To theme a page it reads and restyles that page's content entirely on your device, in real time. Nothing about your browsing is collected or transmitted, ever. See the full [privacy policy](https://corvusdevs.github.io/Night-Crow-For-Safari/privacy.html).
+No accounts, no analytics, no telemetry, no tracking. Night Crow never phones home. To theme a page it reads and restyles that page's content entirely on your device, in real time. The extension does not collect your browsing history or send it to the developer. See the full [privacy policy](https://corvusdevs.github.io/Night-Crow-For-Safari/privacy.html).
 
 ## More from CorvusDevs
 

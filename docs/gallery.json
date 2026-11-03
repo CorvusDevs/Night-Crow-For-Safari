@@ -4,18 +4,6 @@
   "items": [
     {
       "platform": "Mac",
-      "description": "Light and dark website comparison",
-      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/df/de/0c/dfde0caa-4852-6514-608f-9f3b98335699/01-hero_framed.png/2880x1800bb.jpg",
-      "sourceWidth": 2880,
-      "sourceHeight": 1800,
-      "asset": "assets/gallery/mac-1.jpg",
-      "width": 1440,
-      "height": 900,
-      "bytes": 166638,
-      "sha256": "1f09f97cecc0ee75d88dce2ba4f42da1f04c0d9c0eda529b5e3b6eccb8c6206b"
-    },
-    {
-      "platform": "Mac",
       "description": "Theming modes",
       "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7e/5f/9d/7e5f9d47-185d-fbac-837a-ffd142a20316/02-modes_framed.png/2880x1800bb.jpg",
       "sourceWidth": 2880,
@@ -61,6 +49,18 @@
       "height": 1440,
       "bytes": 82710,
       "sha256": "338708146f2e21f99d6bdb36373b42b5c5374bffa27bc2ae33d06b3f796514c9"
+    },
+    {
+      "platform": "Mac",
+      "description": "Light and dark website comparison",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/df/de/0c/dfde0caa-4852-6514-608f-9f3b98335699/01-hero_framed.png/2880x1800bb.jpg",
+      "sourceWidth": 2880,
+      "sourceHeight": 1800,
+      "asset": "assets/gallery/mac-1.jpg",
+      "width": 1440,
+      "height": 900,
+      "bytes": 166638,
+      "sha256": "1f09f97cecc0ee75d88dce2ba4f42da1f04c0d9c0eda529b5e3b6eccb8c6206b"
     }
   ]
 }

@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Night Crow, 真正的黑夜模式</title>
-    <meta name="description" content="为 Safari 中所有网站提供智能原生深色模式。动态色彩重映射确保照片色彩真实且文字清晰可读，支持按网站定制规则、预设以及日落至日出的时间调度。">
+    <title>Night Crow: 为每个网站调整深色模式</title>
+    <meta name="description" content="为每个获准访问的网站选择模式。调整对比度、保存网站规则，并安排日落到日出的深色模式。">
     <link rel="canonical" href="https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/zh_CN/">
     <link rel="alternate" hreflang="ar" href="https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/ar/">
     <link rel="alternate" hreflang="cs" href="https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/cs/">
@@ -76,7 +76,7 @@
     <link rel="alternate" hreflang="x-default" href="https://corvusdevs.github.io/Night-Crow-For-Safari/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Night Crow, 真正的黑夜模式">
-    <meta property="og:description" content="为 Safari 中所有网站提供智能原生深色模式。动态色彩重映射确保照片色彩真实且文字清晰可读，支持按网站定制规则、预设以及日落至日出的时间调度。">
+    <meta property="og:description" content="为每个获准访问的网站选择模式。调整对比度、保存网站规则，并安排日落到日出的深色模式。">
     <meta property="og:image" content="https://corvusdevs.github.io/Night-Crow-For-Safari/og-image.png">
     <meta property="og:url" content="https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/zh_CN/">
     <meta name="twitter:card" content="summary_large_image">
@@ -90,7 +90,7 @@
   "operatingSystem": "macOS, iOS, iPadOS",
   "applicationCategory": "UtilitiesApplication",
   "applicationSubCategory": "Browser Extension",
-  "description": "A smart, native dark mode for every website in Safari. Dynamic color remapping, per-site rules, presets, and sunset-to-sunrise scheduling.",
+  "description": "为每个获准访问的网站选择模式。调整对比度、保存网站规则，并安排日落到日出的深色模式。",
   "image": "https://corvusdevs.github.io/Night-Crow-For-Safari/icon.png",
   "url": "https://corvusdevs.github.io/Night-Crow-For-Safari/",
   "offers": {
@@ -234,6 +234,20 @@
     /* accessibility-contrast v1 */
 .cta:not(.secondary),.stepnum{color:#130b24}
 /* accessibility-contrast:end */
+
+/* Focused reading and optional detail, preserving product colors. */
+.feature-reference { margin:28px auto 0; max-width:1120px; border:1px solid var(--border,#35313b); border-radius:14px; padding:0 20px; }
+.feature-reference > summary { cursor:pointer; min-height:48px; padding:16px 0; font-size:16px; font-weight:650; color:var(--text,#eee); }
+.feature-reference > summary:focus-visible { outline:3px solid var(--accent,#8baaff); outline-offset:4px; }
+.feature-reference[open] { padding-bottom:20px; }
+.feature-reference .features-grid { margin-top:20px; }
+@media(max-width:600px) { .feature-reference { padding-inline:16px; } }
+
+.primary-grid,.feature-reference .grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+@media(max-width:720px) { .hero > div:first-child { padding-inline:22px; } .hero h1 { font-size:clamp(30px,8.6vw,38px); } .primary-grid,.feature-reference .grid { grid-template-columns:1fr; } }
+.why-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+@media(max-width:720px) { .why-grid { grid-template-columns:1fr; } }
+@media(max-width:720px) { section.wrap.block { padding-inline:22px; } }
 </style>
   <link rel="stylesheet" href="../../gallery.css">
 </head>
@@ -258,8 +272,8 @@
     <main>
         <section class="wrap hero">
             <div>
-                <h1><span data-i18n="idx_tagline">所有网站的深色主题</span><br><span class="grad">Night Crow For Safari</span></h1>
-                <p class="sub" data-i18n="hero_sub">为 Safari 中所有网站提供智能原生深色模式。动态色彩重映射确保照片色彩真实且文字清晰可读，支持按网站定制规则、预设以及日落至日出的时间调度。</p>
+                <h1><span data-i18n="idx_tagline">为每个网站调整深色模式</span><br><span class="grad">Night Crow For Safari</span></h1>
+                <p class="sub" data-i18n="hero_sub">为每个获准访问的网站选择模式。调整对比度、保存网站规则，并安排日落到日出的深色模式。</p>
                 <div class="ctas">
                     <a class="cta" href="https://apps.apple.com/app/id6785353496" data-i18n="hero_cta_ios" data-product-store>下载 iOS 版</a>
                     <a class="cta secondary" href="https://apps.apple.com/app/id6785353496" data-i18n="hero_cta_mac" data-product-store>下载 macOS 版</a>
@@ -272,22 +286,13 @@
         </section>
 
         <!-- OFFICIAL-GALLERY:START -->
-<section class="official-gallery" aria-labelledby="official-gallery-title"><h2 id="official-gallery-title">截图</h2><div class="official-gallery-grid"><figure><a href="../../assets/gallery/mac-1.jpg"><img lang="en" src="../../assets/gallery/mac-1.jpg" alt="Night Crow For Safari: Light and dark website comparison (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Light and dark website comparison</span></figcaption></figure><figure><a href="../../assets/gallery/mac-2.jpg"><img lang="en" src="../../assets/gallery/mac-2.jpg" alt="Night Crow For Safari: Theming modes (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Theming modes</span></figcaption></figure><figure><a href="../../assets/gallery/mac-3.jpg"><img lang="en" src="../../assets/gallery/mac-3.jpg" alt="Night Crow For Safari: Per-site appearance settings (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Per-site appearance settings</span></figcaption></figure><figure><a href="../../assets/gallery/phone-4.jpg"><img lang="en" src="../../assets/gallery/phone-4.jpg" alt="Night Crow For Safari: Scheduling controls on iPhone (iPhone)" width="663" height="1440" loading="lazy" decoding="async"></a><figcaption><strong>iPhone</strong><span lang="en">Scheduling controls on iPhone</span></figcaption></figure><figure><a href="../../assets/gallery/pad-5.jpg"><img lang="en" src="../../assets/gallery/pad-5.jpg" alt="Night Crow For Safari: Appearance presets on iPad (iPad)" width="1080" height="1440" loading="lazy" decoding="async"></a><figcaption><strong>iPad</strong><span lang="en">Appearance presets on iPad</span></figcaption></figure></div></section>
+<section class="official-gallery" aria-labelledby="official-gallery-title"><h2 id="official-gallery-title">截图</h2><div class="official-gallery-lead"><figure><a href="../../assets/gallery/mac-2.jpg"><img lang="en" src="../../assets/gallery/mac-2.jpg" alt="Night Crow For Safari: Theming modes (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Theming modes</span></figcaption></figure></div><details class="official-gallery-more"><summary><span data-gallery-more>更多截图</span> <span class="official-gallery-count" aria-hidden="true">(4)</span></summary><div class="official-gallery-grid"><figure><a href="../../assets/gallery/mac-3.jpg"><img lang="en" src="../../assets/gallery/mac-3.jpg" alt="Night Crow For Safari: Per-site appearance settings (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Per-site appearance settings</span></figcaption></figure><figure><a href="../../assets/gallery/phone-4.jpg"><img lang="en" src="../../assets/gallery/phone-4.jpg" alt="Night Crow For Safari: Scheduling controls on iPhone (iPhone)" width="663" height="1440" loading="lazy" decoding="async"></a><figcaption><strong>iPhone</strong><span lang="en">Scheduling controls on iPhone</span></figcaption></figure><figure><a href="../../assets/gallery/pad-5.jpg"><img lang="en" src="../../assets/gallery/pad-5.jpg" alt="Night Crow For Safari: Appearance presets on iPad (iPad)" width="1080" height="1440" loading="lazy" decoding="async"></a><figcaption><strong>iPad</strong><span lang="en">Appearance presets on iPad</span></figcaption></figure><figure><a href="../../assets/gallery/mac-1.jpg"><img lang="en" src="../../assets/gallery/mac-1.jpg" alt="Night Crow For Safari: Light and dark website comparison (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Light and dark website comparison</span></figcaption></figure></div></details></section>
 <!-- OFFICIAL-GALLERY:END -->
 <section class="wrap block" id="features">
             <div class="label" data-i18n="sec_features_label">功能</div>
             <h2 class="title" data-i18n="sec_features_title">真正的黑夜模式</h2>
-            <div class="grid">
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></div><h3 data-i18n="f1_t">动态模式</h3><p data-i18n="f1_d">读取每个网站的自有颜色并自动将其转换为深色模式。照片保持原样，文字清晰可读。</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div><h3 data-i18n="f2_t">四种主题模式</h3><p data-i18n="f2_d">动态、过滤、过滤 + 和静态。根据每个网站的适配情况，随时切换不同的模式。</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"/><circle cx="4" cy="12" r="2"/><circle cx="12" cy="10" r="2"/><circle cx="20" cy="14" r="2"/></svg></div><h3 data-i18n="f3_t">网站规则</h3><p data-i18n="f3_d">启用、禁用或微调任意网站，精确到如 example.com/docs 这样的单个部分。</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3 data-i18n="f4_t">智能调度</h3><p data-i18n="f4_d">跟随您的系统外观，或设定一个时间窗口，或根据您所在地的日落至日出时间自动切换。</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 8.7l5.4-.8z"/></svg></div><h3 data-i18n="f5_t">主题预设</h3><p data-i18n="f5_d">提供 调暗、午夜、石板、夜暮 和 高对比度 五种主题，每种一键切换。</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l4-1 11-11-3-3L5 16l-1 4z"/><path d="M13 6l3 3"/></svg></div><h3 data-i18n="f6_t">自定义 CSS 与字体</h3><p data-i18n="f6_d">在每个网站注入自定义 CSS，覆盖页面字体，并添加描边以增强文字清晰度。</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M15 3.5A9 9 0 0 1 20.5 9"/><path d="M9 12l2 2 4-4"/></svg></div><h3 data-i18n="f7_t">已支持深色模式</h3><p data-i18n="f7_d">支持网站自带深色主题，自动识别并保留原样，避免双重变暗。</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3 data-i18n="f8_t">原生隐私设计</h3><p data-i18n="f8_d">无需账号，无需分析，无需追踪。您的浏览数据永远不会离开设备。</p></div>
-            </div>
-            <div class="features-list">
+            <div class="grid primary-grid"><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></div><h3 data-i18n="f1_t">动态模式</h3><p data-i18n="f1_d">读取每个网站的自有颜色并自动将其转换为深色模式。照片保持原样，文字清晰可读。</p></div><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div><h3 data-i18n="f2_t">四种主题模式</h3><p data-i18n="f2_d">先从 Dynamic 开始。页面需要其他处理方式时，可尝试 Filter 或 Filter+；要自选颜色，则使用 Static。</p></div><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"/><circle cx="4" cy="12" r="2"/><circle cx="12" cy="10" r="2"/><circle cx="20" cy="14" r="2"/></svg></div><h3 data-i18n="f3_t">网站规则</h3><p data-i18n="f3_d">启用、禁用或微调任意网站，精确到如 example.com/docs 这样的单个部分。</p></div><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3 data-i18n="f4_t">智能调度</h3><p data-i18n="f4_d">跟随您的系统外观，或设定一个时间窗口，或根据您所在地的日落至日出时间自动切换。</p></div></div>
+            <details class="feature-reference"><summary data-i18n="details_controls">更多控制</summary><div class="grid"><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 8.7l5.4-.8z"/></svg></div><h3 data-i18n="f5_t">主题预设</h3><p data-i18n="f5_d">提供 调暗、午夜、石板、夜暮 和 高对比度 五种主题，每种一键切换。</p></div><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l4-1 11-11-3-3L5 16l-1 4z"/><path d="M13 6l3 3"/></svg></div><h3 data-i18n="f6_t">自定义 CSS 与字体</h3><p data-i18n="f6_d">在每个网站注入自定义 CSS，覆盖页面字体，并添加描边以增强文字清晰度。</p></div><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M15 3.5A9 9 0 0 1 20.5 9"/><path d="M9 12l2 2 4-4"/></svg></div><h3 data-i18n="f7_t">已支持深色模式</h3><p data-i18n="f7_d">支持网站自带深色主题，自动识别并保留原样，避免双重变暗。</p></div><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3 data-i18n="f8_t">原生隐私设计</h3><p data-i18n="f8_d">扩展不会收集浏览历史，也不会将其发送给开发者。无需账户，没有分析或跟踪。</p></div></div><div class="features-list">
                 <div class="feature-row">
                     <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-5M4 12V3M12 21v-9M12 8V3M20 21v-3M20 14V3"/><circle cx="4" cy="14" r="2"/><circle cx="12" cy="10" r="2"/><circle cx="20" cy="16" r="2"/></svg></div>
                     <div class="feature-row__body">
@@ -299,7 +304,7 @@
                     <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="9" cy="10" r="2"/><path d="M15 8l3 3-3 3"/></svg></div>
                     <div class="feature-row__body">
                         <h3 data-i18n="fl2_t">智能 Logo 处理</h3>
-                        <p data-i18n="fl2_d">深色图标和图标会逐像素分析，仅在必要时才进行反转，因此照片永远不会受到影响。</p>
+                        <p data-i18n="fl2_d">动态模式将图片与页面颜色分开处理。选择其他模式时，请检查显示效果。</p>
                     </div>
                 </div>
                 <div class="feature-row">
@@ -319,7 +324,7 @@
                 <div class="feature-row">
                     <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="M8 10h8M8 14h5"/></svg></div>
                     <div class="feature-row__body">
-                        <h3 data-i18n="fl5_t">表单处处清晰可读</h3>
+                        <h3 data-i18n="fl5_t">随主题变化的表单</h3>
                         <p data-i18n="fl5_d">输入框、下拉菜单、滚动条，甚至自动填充的字段都会遵循深色主题，而不是闪烁白色或黄色。</p>
                     </div>
                 </div>
@@ -344,7 +349,7 @@
                         <p data-i18n="fl8_d">完全本地化支持英语、西班牙语、法语、德语、日语、韩语、中文、阿拉伯语，以及另外 25 种语言。</p>
                     </div>
                 </div>
-            </div>
+            </div></details>
         </section>
 
         <section class="wrap block" id="how">
@@ -353,7 +358,7 @@
             <div class="steps">
                 <div class="step"><div class="stepnum">1</div><h3 data-i18n="how1_t">从 App Store 安装</h3><p data-i18n="how1_d">下载 Night Crow。它是一款轻量级、原生的 Safari 扩展。</p></div>
                 <div class="step"><div class="stepnum">2</div><h3 data-i18n="how2_t">在 Safari 中启用</h3><p data-i18n="how2_d">打开 Safari 设置，进入扩展，开启 Night Crow 并允许其在网站上运行。</p></div>
-                <div class="step"><div class="stepnum">3</div><h3 data-i18n="how3_t">在暗色模式下浏览</h3><p data-i18n="how3_d">所有网站都会自动切换为深色模式。您只需从工具栏弹出窗口中调整任意页面的设置即可。</p></div>
+                <div class="step"><div class="stepnum">3</div><h3 data-i18n="how3_t">在暗色模式下浏览</h3><p data-i18n="how3_d">访问已获授权的网站，并从工具栏调整其外观。</p></div>
             </div>
         </section>
 
@@ -361,10 +366,9 @@
             <div class="label" data-i18n="sec_why_label">为何选择 Night Crow</div>
             <h2 class="title" data-i18n="sec_why_title">专为 Safari 用户打造</h2>
             <div class="why-grid">
-                <div class="why-card"><h3 data-i18n="why1_t">照片依然美丽</h3><p data-i18n="why1_d">动态模式通过重新构建颜色而非整体反转页面，确保图片和视频保持真实色彩。</p></div>
-                <div class="why-card"><h3 data-i18n="why2_t">始终可读</h3><p data-i18n="why2_d">感知对比度底线确保重映射文本在所有网站上都清晰可读，即使作者偷工减料。</p></div>
+                <div class="why-card"><h3 data-i18n="why2_t">可自行调整的可读性</h3><p data-i18n="why2_d">当页面需要不同的处理方式时，可切换模式或调整对比度。</p></div>
                 <div class="why-card"><h3 data-i18n="why3_t">说您的语言</h3><p data-i18n="why3_d">已完全本地化至 33 种语言：包括弹出窗口、设置、新手引导以及本页面。</p></div>
-                <div class="why-card"><h3 data-i18n="why4_t">一次性付费</h3><p data-i18n="why4_d">仅需一杯咖啡的价格，即可永久拥有。无需订阅，无广告，无额外推销。</p></div>
+                <div class="why-card"><h3 data-i18n="why4_t">一次性付费</h3><p data-i18n="why4_d">一次购买。无订阅、广告或额外购买。</p></div>
             </div>
         </section>
 
@@ -391,8 +395,8 @@
         </div>
     </footer>
 
-    <script src="../../translations.js"></script>
-    <script src="../../i18n.js"></script>
+    <script src="../../translations.js?v=review-20261103"></script>
+    <script src="../../i18n.js?v=review-20261103-routing"></script>
     <script src="../../carousel.js"></script>
   <script src="../../gallery.js" defer></script>
 </body>

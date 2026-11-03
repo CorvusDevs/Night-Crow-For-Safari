@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Night Crow, 올바르게 구현된 어둠</title>
-    <meta name="description" content="Safari 의 모든 웹사이트에 적용되는 지능형 네이티브 다크 모드입니다. 사진은 원본 색상을 유지하고 텍스트는 읽기 쉽게 하는 동적 색상 매핑을 지원하며, 사이트별 규칙, 프리셋, 일몰에서 일출까지의 스케줄링이 가능합니다.">
+    <title>Night Crow: 사이트마다 맞추는 다크 모드</title>
+    <meta name="description" content="허용한 사이트마다 모드를 선택하세요. 대비와 사이트별 규칙을 조정하고 일몰부터 일출까지 다크 모드를 예약할 수 있습니다.">
     <link rel="canonical" href="https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/ko/">
     <link rel="alternate" hreflang="ar" href="https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/ar/">
     <link rel="alternate" hreflang="cs" href="https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/cs/">
@@ -76,7 +76,7 @@
     <link rel="alternate" hreflang="x-default" href="https://corvusdevs.github.io/Night-Crow-For-Safari/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Night Crow, 올바르게 구현된 어둠">
-    <meta property="og:description" content="Safari 의 모든 웹사이트에 적용되는 지능형 네이티브 다크 모드입니다. 사진은 원본 색상을 유지하고 텍스트는 읽기 쉽게 하는 동적 색상 매핑을 지원하며, 사이트별 규칙, 프리셋, 일몰에서 일출까지의 스케줄링이 가능합니다.">
+    <meta property="og:description" content="허용한 사이트마다 모드를 선택하세요. 대비와 사이트별 규칙을 조정하고 일몰부터 일출까지 다크 모드를 예약할 수 있습니다.">
     <meta property="og:image" content="https://corvusdevs.github.io/Night-Crow-For-Safari/og-image.png">
     <meta property="og:url" content="https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/ko/">
     <meta name="twitter:card" content="summary_large_image">
@@ -90,7 +90,7 @@
   "operatingSystem": "macOS, iOS, iPadOS",
   "applicationCategory": "UtilitiesApplication",
   "applicationSubCategory": "Browser Extension",
-  "description": "A smart, native dark mode for every website in Safari. Dynamic color remapping, per-site rules, presets, and sunset-to-sunrise scheduling.",
+  "description": "허용한 사이트마다 모드를 선택하세요. 대비와 사이트별 규칙을 조정하고 일몰부터 일출까지 다크 모드를 예약할 수 있습니다.",
   "image": "https://corvusdevs.github.io/Night-Crow-For-Safari/icon.png",
   "url": "https://corvusdevs.github.io/Night-Crow-For-Safari/",
   "offers": {
@@ -234,6 +234,20 @@
     /* accessibility-contrast v1 */
 .cta:not(.secondary),.stepnum{color:#130b24}
 /* accessibility-contrast:end */
+
+/* Focused reading and optional detail, preserving product colors. */
+.feature-reference { margin:28px auto 0; max-width:1120px; border:1px solid var(--border,#35313b); border-radius:14px; padding:0 20px; }
+.feature-reference > summary { cursor:pointer; min-height:48px; padding:16px 0; font-size:16px; font-weight:650; color:var(--text,#eee); }
+.feature-reference > summary:focus-visible { outline:3px solid var(--accent,#8baaff); outline-offset:4px; }
+.feature-reference[open] { padding-bottom:20px; }
+.feature-reference .features-grid { margin-top:20px; }
+@media(max-width:600px) { .feature-reference { padding-inline:16px; } }
+
+.primary-grid,.feature-reference .grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+@media(max-width:720px) { .hero > div:first-child { padding-inline:22px; } .hero h1 { font-size:clamp(30px,8.6vw,38px); } .primary-grid,.feature-reference .grid { grid-template-columns:1fr; } }
+.why-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+@media(max-width:720px) { .why-grid { grid-template-columns:1fr; } }
+@media(max-width:720px) { section.wrap.block { padding-inline:22px; } }
 </style>
   <link rel="stylesheet" href="../../gallery.css">
 </head>
@@ -258,8 +272,8 @@
     <main>
         <section class="wrap hero">
             <div>
-                <h1><span data-i18n="idx_tagline">모든 웹사이트에 대한 다크 테마</span><br><span class="grad">Night Crow For Safari</span></h1>
-                <p class="sub" data-i18n="hero_sub">Safari 의 모든 웹사이트에 적용되는 지능형 네이티브 다크 모드입니다. 사진은 원본 색상을 유지하고 텍스트는 읽기 쉽게 하는 동적 색상 매핑을 지원하며, 사이트별 규칙, 프리셋, 일몰에서 일출까지의 스케줄링이 가능합니다.</p>
+                <h1><span data-i18n="idx_tagline">사이트마다 맞추는 다크 모드</span><br><span class="grad">Night Crow For Safari</span></h1>
+                <p class="sub" data-i18n="hero_sub">허용한 사이트마다 모드를 선택하세요. 대비와 사이트별 규칙을 조정하고 일몰부터 일출까지 다크 모드를 예약할 수 있습니다.</p>
                 <div class="ctas">
                     <a class="cta" href="https://apps.apple.com/app/id6785353496" data-i18n="hero_cta_ios" data-product-store>iOS용 다운로드</a>
                     <a class="cta secondary" href="https://apps.apple.com/app/id6785353496" data-i18n="hero_cta_mac" data-product-store>macOS용 다운로드</a>
@@ -272,22 +286,13 @@
         </section>
 
         <!-- OFFICIAL-GALLERY:START -->
-<section class="official-gallery" aria-labelledby="official-gallery-title"><h2 id="official-gallery-title">스크린샷</h2><div class="official-gallery-grid"><figure><a href="../../assets/gallery/mac-1.jpg"><img lang="en" src="../../assets/gallery/mac-1.jpg" alt="Night Crow For Safari: Light and dark website comparison (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Light and dark website comparison</span></figcaption></figure><figure><a href="../../assets/gallery/mac-2.jpg"><img lang="en" src="../../assets/gallery/mac-2.jpg" alt="Night Crow For Safari: Theming modes (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Theming modes</span></figcaption></figure><figure><a href="../../assets/gallery/mac-3.jpg"><img lang="en" src="../../assets/gallery/mac-3.jpg" alt="Night Crow For Safari: Per-site appearance settings (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Per-site appearance settings</span></figcaption></figure><figure><a href="../../assets/gallery/phone-4.jpg"><img lang="en" src="../../assets/gallery/phone-4.jpg" alt="Night Crow For Safari: Scheduling controls on iPhone (iPhone)" width="663" height="1440" loading="lazy" decoding="async"></a><figcaption><strong>iPhone</strong><span lang="en">Scheduling controls on iPhone</span></figcaption></figure><figure><a href="../../assets/gallery/pad-5.jpg"><img lang="en" src="../../assets/gallery/pad-5.jpg" alt="Night Crow For Safari: Appearance presets on iPad (iPad)" width="1080" height="1440" loading="lazy" decoding="async"></a><figcaption><strong>iPad</strong><span lang="en">Appearance presets on iPad</span></figcaption></figure></div></section>
+<section class="official-gallery" aria-labelledby="official-gallery-title"><h2 id="official-gallery-title">스크린샷</h2><div class="official-gallery-lead"><figure><a href="../../assets/gallery/mac-2.jpg"><img lang="en" src="../../assets/gallery/mac-2.jpg" alt="Night Crow For Safari: Theming modes (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Theming modes</span></figcaption></figure></div><details class="official-gallery-more"><summary><span data-gallery-more>스크린샷 더 보기</span> <span class="official-gallery-count" aria-hidden="true">(4)</span></summary><div class="official-gallery-grid"><figure><a href="../../assets/gallery/mac-3.jpg"><img lang="en" src="../../assets/gallery/mac-3.jpg" alt="Night Crow For Safari: Per-site appearance settings (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Per-site appearance settings</span></figcaption></figure><figure><a href="../../assets/gallery/phone-4.jpg"><img lang="en" src="../../assets/gallery/phone-4.jpg" alt="Night Crow For Safari: Scheduling controls on iPhone (iPhone)" width="663" height="1440" loading="lazy" decoding="async"></a><figcaption><strong>iPhone</strong><span lang="en">Scheduling controls on iPhone</span></figcaption></figure><figure><a href="../../assets/gallery/pad-5.jpg"><img lang="en" src="../../assets/gallery/pad-5.jpg" alt="Night Crow For Safari: Appearance presets on iPad (iPad)" width="1080" height="1440" loading="lazy" decoding="async"></a><figcaption><strong>iPad</strong><span lang="en">Appearance presets on iPad</span></figcaption></figure><figure><a href="../../assets/gallery/mac-1.jpg"><img lang="en" src="../../assets/gallery/mac-1.jpg" alt="Night Crow For Safari: Light and dark website comparison (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Light and dark website comparison</span></figcaption></figure></div></details></section>
 <!-- OFFICIAL-GALLERY:END -->
 <section class="wrap block" id="features">
             <div class="label" data-i18n="sec_features_label">기능</div>
             <h2 class="title" data-i18n="sec_features_title">올바르게 구현된 어둠</h2>
-            <div class="grid">
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></div><h3 data-i18n="f1_t">다이나믹 모드</h3><p data-i18n="f1_d">각 사이트의 고유한 색상을 읽어서 어두운 모드로 재구성합니다. 사진은 원래 색상을 유지하고, 텍스트는 읽기 쉽게 표시됩니다.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div><h3 data-i18n="f2_t">네 가지 테마 모드</h3><p data-i18n="f2_d">다이나믹, 필터, 필터+, 스태틱. 상황에 따라 사이트마다 다른 모드를 선택할 수 있습니다.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"/><circle cx="4" cy="12" r="2"/><circle cx="12" cy="10" r="2"/><circle cx="20" cy="14" r="2"/></svg></div><h3 data-i18n="f3_t">사이트별 규칙</h3><p data-i18n="f3_d">어떤 사이트도 활성화하거나 비활성화하거나, example.com/docs와 같은 특정 섹션까지 세밀하게 조정할 수 있습니다.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3 data-i18n="f4_t">지능형 일정 관리</h3><p data-i18n="f4_d">시스템 모양, 시간대, 또는 위치의 일몰에서 일출까지 선택하세요.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 8.7l5.4-.8z"/></svg></div><h3 data-i18n="f5_t">테마 프리셋</h3><p data-i18n="f5_d">어둡게, 자정, 슬레이트, 세피아 나이트, 고대비. 각각 한 번의 클릭으로.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l4-1 11-11-3-3L5 16l-1 4z"/><path d="M13 6l3 3"/></svg></div><h3 data-i18n="f6_t">사용자 정의 CSS 및 폰트</h3><p data-i18n="f6_d">사이트별 CSS 를 직접 주입하고 페이지 폰트를 덮어쓰며, 스트로크로 텍스트를 선명하게 만듭니다.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M15 3.5A9 9 0 0 1 20.5 9"/><path d="M9 12l2 2 4-4"/></svg></div><h3 data-i18n="f7_t">어두운 테마에 이미 적응된</h3><p data-i18n="f7_d">자체 다크 테마를 제공하는 사이트는 감지되어 이중 다크닝이 방지됩니다.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3 data-i18n="f8_t">설계부터 프라이버시 보호</h3><p data-i18n="f8_d">계정이 필요 없으며, 분석도 없고, 추적도 없습니다. 브라우저 활동에 대한 모든 정보는 기기를 떠나지 않습니다.</p></div>
-            </div>
-            <div class="features-list">
+            <div class="grid primary-grid"><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></div><h3 data-i18n="f1_t">다이나믹 모드</h3><p data-i18n="f1_d">각 사이트의 고유한 색상을 읽어서 어두운 모드로 재구성합니다. 사진은 원래 색상을 유지하고, 텍스트는 읽기 쉽게 표시됩니다.</p></div><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div><h3 data-i18n="f2_t">네 가지 테마 모드</h3><p data-i18n="f2_d">Dynamic부터 시작하세요. 다른 방식이 필요한 페이지에는 Filter나 Filter+를, 직접 고른 색상에는 Static을 사용해 보세요.</p></div><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"/><circle cx="4" cy="12" r="2"/><circle cx="12" cy="10" r="2"/><circle cx="20" cy="14" r="2"/></svg></div><h3 data-i18n="f3_t">사이트별 규칙</h3><p data-i18n="f3_d">어떤 사이트도 활성화하거나 비활성화하거나, example.com/docs와 같은 특정 섹션까지 세밀하게 조정할 수 있습니다.</p></div><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3 data-i18n="f4_t">지능형 일정 관리</h3><p data-i18n="f4_d">시스템 모양, 시간대, 또는 위치의 일몰에서 일출까지 선택하세요.</p></div></div>
+            <details class="feature-reference"><summary data-i18n="details_controls">추가 제어</summary><div class="grid"><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 8.7l5.4-.8z"/></svg></div><h3 data-i18n="f5_t">테마 프리셋</h3><p data-i18n="f5_d">어둡게, 자정, 슬레이트, 세피아 나이트, 고대비. 각각 한 번의 클릭으로.</p></div><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l4-1 11-11-3-3L5 16l-1 4z"/><path d="M13 6l3 3"/></svg></div><h3 data-i18n="f6_t">사용자 정의 CSS 및 폰트</h3><p data-i18n="f6_d">사이트별 CSS 를 직접 주입하고 페이지 폰트를 덮어쓰며, 스트로크로 텍스트를 선명하게 만듭니다.</p></div><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M15 3.5A9 9 0 0 1 20.5 9"/><path d="M9 12l2 2 4-4"/></svg></div><h3 data-i18n="f7_t">어두운 테마에 이미 적응된</h3><p data-i18n="f7_d">자체 다크 테마를 제공하는 사이트는 감지되어 이중 다크닝이 방지됩니다.</p></div><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3 data-i18n="f8_t">설계부터 프라이버시 보호</h3><p data-i18n="f8_d">확장 프로그램은 방문 기록을 수집하거나 개발자에게 보내지 않습니다. 계정, 분석, 추적이 없습니다.</p></div></div><div class="features-list">
                 <div class="feature-row">
                     <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-5M4 12V3M12 21v-9M12 8V3M20 21v-3M20 14V3"/><circle cx="4" cy="14" r="2"/><circle cx="12" cy="10" r="2"/><circle cx="20" cy="16" r="2"/></svg></div>
                     <div class="feature-row__body">
@@ -299,7 +304,7 @@
                     <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="9" cy="10" r="2"/><path d="M15 8l3 3-3 3"/></svg></div>
                     <div class="feature-row__body">
                         <h3 data-i18n="fl2_t">스마트 로고 처리</h3>
-                        <p data-i18n="fl2_d">다크 모드에서 로고와 아이콘은 픽셀 단위로 분석되어 도움이 될 때만 반전되므로, 사진은 절대 손대지 않습니다.</p>
+                        <p data-i18n="fl2_d">동적 모드는 이미지와 페이지 색상을 별도로 처리합니다. 다른 모드를 선택할 때 결과를 확인하세요.</p>
                     </div>
                 </div>
                 <div class="feature-row">
@@ -319,7 +324,7 @@
                 <div class="feature-row">
                     <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="M8 10h8M8 14h5"/></svg></div>
                     <div class="feature-row__body">
-                        <h3 data-i18n="fl5_t">어디서나 읽기 쉬운 입력 양식</h3>
+                        <h3 data-i18n="fl5_t">테마를 따르는 입력 양식</h3>
                         <p data-i18n="fl5_d">입력 필드, 드롭다운, 스크롤바, 자동 완성 필드까지 테마에 맞춰져 있어 하얗거나 노란색으로 깜빡이지 않습니다.</p>
                     </div>
                 </div>
@@ -344,7 +349,7 @@
                         <p data-i18n="fl8_d">영어, 스페인어, 프랑스어, 독일어, 일본어, 한국어, 중국어, 아랍어 및 25개 이상의 언어로 완벽하게 현지화되었습니다.</p>
                     </div>
                 </div>
-            </div>
+            </div></details>
         </section>
 
         <section class="wrap block" id="how">
@@ -353,7 +358,7 @@
             <div class="steps">
                 <div class="step"><div class="stepnum">1</div><h3 data-i18n="how1_t">App Store 에서 설치하세요</h3><p data-i18n="how1_d">Night Crow 다운로드. 이는 가볍고 네이티브인 Safari 확장 프로그램입니다.</p></div>
                 <div class="step"><div class="stepnum">2</div><h3 data-i18n="how2_t">Safari 에서 활성화</h3><p data-i18n="how2_d">Safari 설정으로 이동하여 확장 프로그램을 선택한 후 Night Crow 를 켜고 웹사이트에서 사용 권한을 허용하세요.</p></div>
-                <div class="step"><div class="stepnum">3</div><h3 data-i18n="how3_t">어둠 속에서 탐색</h3><p data-i18n="how3_d">모든 사이트가 자동으로 어두운 테마로 전환됩니다. 도구 막대 팝업에서 바로 페이지 테마를 조정하세요.</p></div>
+                <div class="step"><div class="stepnum">3</div><h3 data-i18n="how3_t">어둠 속에서 탐색</h3><p data-i18n="how3_d">허용한 사이트를 방문하고 도구 막대에서 모양을 조정하세요.</p></div>
             </div>
         </section>
 
@@ -361,10 +366,9 @@
             <div class="label" data-i18n="sec_why_label">왜 Night Crow</div>
             <h2 class="title" data-i18n="sec_why_title">Safari 사용자를 위해 제작되었습니다</h2>
             <div class="why-grid">
-                <div class="why-card"><h3 data-i18n="why1_t">사진은 여전히 아름답습니다</h3><p data-i18n="why1_d">동적 모드는 전체 페이지를 반전하는 대신 색상을 재구성하므로 이미지와 비디오는 실제 색상을 유지합니다.</p></div>
-                <div class="why-card"><h3 data-i18n="why2_t">언제나 읽기 쉽게</h3><p data-i18n="why2_d">지각 기반 최소 대비 기준이 모든 사이트에서 재매핑된 텍스트의 가독성을 지켜 줍니다. 제작자가 신경 쓰지 않은 사이트에서도 마찬가지입니다.</p></div>
+                <div class="why-card"><h3 data-i18n="why2_t">직접 조정하는 가독성</h3><p data-i18n="why2_d">페이지에 다른 처리가 필요하면 모드를 바꾸거나 대비를 조정하세요.</p></div>
                 <div class="why-card"><h3 data-i18n="why3_t">당신의 언어로 말합니다</h3><p data-i18n="why3_d">33 개 언어로 완전히 현지화: 팝업, 설정, 온보딩 및 이 페이지.</p></div>
-                <div class="why-card"><h3 data-i18n="why4_t">한 번 결제</h3><p data-i18n="why4_d">커피 한 잔 값에 영원히 소유하세요. 구독도 광고도 추가 구매 권유도 없습니다.</p></div>
+                <div class="why-card"><h3 data-i18n="why4_t">한 번 결제</h3><p data-i18n="why4_d">한 번만 구매하세요. 구독, 광고, 추가 구매가 없습니다.</p></div>
             </div>
         </section>
 
@@ -391,8 +395,8 @@
         </div>
     </footer>
 
-    <script src="../../translations.js"></script>
-    <script src="../../i18n.js"></script>
+    <script src="../../translations.js?v=review-20261103"></script>
+    <script src="../../i18n.js?v=review-20261103-routing"></script>
     <script src="../../carousel.js"></script>
   <script src="../../gallery.js" defer></script>
 </body>

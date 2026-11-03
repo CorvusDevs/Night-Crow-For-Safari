@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Night Crow, Oscuro, fatto bene</title>
-    <meta name="description" content="Una modalità scura intelligente e nativa per ogni sito web in Safari. Un rimappaggio dinamico dei colori che mantiene le foto fedeli e il testo leggibile, co…">
+    <title>Night Crow: Modalità scura per ogni sito</title>
+    <meta name="description" content="Scegli una modalità per ogni sito consentito. Regola il contrasto, salva regole per sito e programma la modalità scura dal tramonto all’alba.">
     <link rel="canonical" href="https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/it/">
     <link rel="alternate" hreflang="ar" href="https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/ar/">
     <link rel="alternate" hreflang="cs" href="https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/cs/">
@@ -76,7 +76,7 @@
     <link rel="alternate" hreflang="x-default" href="https://corvusdevs.github.io/Night-Crow-For-Safari/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Night Crow, Oscuro, fatto bene">
-    <meta property="og:description" content="Una modalità scura intelligente e nativa per ogni sito web in Safari. Un rimappaggio dinamico dei colori che mantiene le foto fedeli e il testo leggibile, co…">
+    <meta property="og:description" content="Scegli una modalità per ogni sito consentito. Regola il contrasto, salva regole per sito e programma la modalità scura dal tramonto all’alba.">
     <meta property="og:image" content="https://corvusdevs.github.io/Night-Crow-For-Safari/og-image.png">
     <meta property="og:url" content="https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/it/">
     <meta name="twitter:card" content="summary_large_image">
@@ -90,7 +90,7 @@
   "operatingSystem": "macOS, iOS, iPadOS",
   "applicationCategory": "UtilitiesApplication",
   "applicationSubCategory": "Browser Extension",
-  "description": "A smart, native dark mode for every website in Safari. Dynamic color remapping, per-site rules, presets, and sunset-to-sunrise scheduling.",
+  "description": "Scegli una modalità per ogni sito consentito. Regola il contrasto, salva regole per sito e programma la modalità scura dal tramonto all’alba.",
   "image": "https://corvusdevs.github.io/Night-Crow-For-Safari/icon.png",
   "url": "https://corvusdevs.github.io/Night-Crow-For-Safari/",
   "offers": {
@@ -234,6 +234,20 @@
     /* accessibility-contrast v1 */
 .cta:not(.secondary),.stepnum{color:#130b24}
 /* accessibility-contrast:end */
+
+/* Focused reading and optional detail, preserving product colors. */
+.feature-reference { margin:28px auto 0; max-width:1120px; border:1px solid var(--border,#35313b); border-radius:14px; padding:0 20px; }
+.feature-reference > summary { cursor:pointer; min-height:48px; padding:16px 0; font-size:16px; font-weight:650; color:var(--text,#eee); }
+.feature-reference > summary:focus-visible { outline:3px solid var(--accent,#8baaff); outline-offset:4px; }
+.feature-reference[open] { padding-bottom:20px; }
+.feature-reference .features-grid { margin-top:20px; }
+@media(max-width:600px) { .feature-reference { padding-inline:16px; } }
+
+.primary-grid,.feature-reference .grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+@media(max-width:720px) { .hero > div:first-child { padding-inline:22px; } .hero h1 { font-size:clamp(30px,8.6vw,38px); } .primary-grid,.feature-reference .grid { grid-template-columns:1fr; } }
+.why-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+@media(max-width:720px) { .why-grid { grid-template-columns:1fr; } }
+@media(max-width:720px) { section.wrap.block { padding-inline:22px; } }
 </style>
   <link rel="stylesheet" href="../../gallery.css">
 </head>
@@ -258,8 +272,8 @@
     <main>
         <section class="wrap hero">
             <div>
-                <h1><span data-i18n="idx_tagline">Tema scuro per tutti i siti web</span><br><span class="grad">Night Crow For Safari</span></h1>
-                <p class="sub" data-i18n="hero_sub">Una modalità scura intelligente e nativa per ogni sito web in Safari. Un rimappaggio dinamico dei colori che mantiene le foto fedeli e il testo leggibile, con regole personalizzate per sito, predefiniti e programmazione da tramonto ad alba.</p>
+                <h1><span data-i18n="idx_tagline">Modalità scura per ogni sito</span><br><span class="grad">Night Crow For Safari</span></h1>
+                <p class="sub" data-i18n="hero_sub">Scegli una modalità per ogni sito consentito. Regola il contrasto, salva regole per sito e programma la modalità scura dal tramonto all’alba.</p>
                 <div class="ctas">
                     <a class="cta" href="https://apps.apple.com/app/id6785353496" data-i18n="hero_cta_ios" data-product-store>Scarica per iOS</a>
                     <a class="cta secondary" href="https://apps.apple.com/app/id6785353496" data-i18n="hero_cta_mac" data-product-store>Scarica per macOS</a>
@@ -272,22 +286,13 @@
         </section>
 
         <!-- OFFICIAL-GALLERY:START -->
-<section class="official-gallery" aria-labelledby="official-gallery-title"><h2 id="official-gallery-title">Schermate</h2><div class="official-gallery-grid"><figure><a href="../../assets/gallery/mac-1.jpg"><img lang="en" src="../../assets/gallery/mac-1.jpg" alt="Night Crow For Safari: Light and dark website comparison (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Light and dark website comparison</span></figcaption></figure><figure><a href="../../assets/gallery/mac-2.jpg"><img lang="en" src="../../assets/gallery/mac-2.jpg" alt="Night Crow For Safari: Theming modes (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Theming modes</span></figcaption></figure><figure><a href="../../assets/gallery/mac-3.jpg"><img lang="en" src="../../assets/gallery/mac-3.jpg" alt="Night Crow For Safari: Per-site appearance settings (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Per-site appearance settings</span></figcaption></figure><figure><a href="../../assets/gallery/phone-4.jpg"><img lang="en" src="../../assets/gallery/phone-4.jpg" alt="Night Crow For Safari: Scheduling controls on iPhone (iPhone)" width="663" height="1440" loading="lazy" decoding="async"></a><figcaption><strong>iPhone</strong><span lang="en">Scheduling controls on iPhone</span></figcaption></figure><figure><a href="../../assets/gallery/pad-5.jpg"><img lang="en" src="../../assets/gallery/pad-5.jpg" alt="Night Crow For Safari: Appearance presets on iPad (iPad)" width="1080" height="1440" loading="lazy" decoding="async"></a><figcaption><strong>iPad</strong><span lang="en">Appearance presets on iPad</span></figcaption></figure></div></section>
+<section class="official-gallery" aria-labelledby="official-gallery-title"><h2 id="official-gallery-title">Schermate</h2><div class="official-gallery-lead"><figure><a href="../../assets/gallery/mac-2.jpg"><img lang="en" src="../../assets/gallery/mac-2.jpg" alt="Night Crow For Safari: Theming modes (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Theming modes</span></figcaption></figure></div><details class="official-gallery-more"><summary><span data-gallery-more>Altre schermate</span> <span class="official-gallery-count" aria-hidden="true">(4)</span></summary><div class="official-gallery-grid"><figure><a href="../../assets/gallery/mac-3.jpg"><img lang="en" src="../../assets/gallery/mac-3.jpg" alt="Night Crow For Safari: Per-site appearance settings (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Per-site appearance settings</span></figcaption></figure><figure><a href="../../assets/gallery/phone-4.jpg"><img lang="en" src="../../assets/gallery/phone-4.jpg" alt="Night Crow For Safari: Scheduling controls on iPhone (iPhone)" width="663" height="1440" loading="lazy" decoding="async"></a><figcaption><strong>iPhone</strong><span lang="en">Scheduling controls on iPhone</span></figcaption></figure><figure><a href="../../assets/gallery/pad-5.jpg"><img lang="en" src="../../assets/gallery/pad-5.jpg" alt="Night Crow For Safari: Appearance presets on iPad (iPad)" width="1080" height="1440" loading="lazy" decoding="async"></a><figcaption><strong>iPad</strong><span lang="en">Appearance presets on iPad</span></figcaption></figure><figure><a href="../../assets/gallery/mac-1.jpg"><img lang="en" src="../../assets/gallery/mac-1.jpg" alt="Night Crow For Safari: Light and dark website comparison (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Light and dark website comparison</span></figcaption></figure></div></details></section>
 <!-- OFFICIAL-GALLERY:END -->
 <section class="wrap block" id="features">
             <div class="label" data-i18n="sec_features_label">Caratteristiche</div>
             <h2 class="title" data-i18n="sec_features_title">Oscuro, fatto bene</h2>
-            <div class="grid">
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></div><h3 data-i18n="f1_t">Modalità dinamica</h3><p data-i18n="f1_d">Legge i colori propri di ogni sito e li ricostruisce in modalità scura. Le foto restano fedeli, il testo rimane leggibile.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div><h3 data-i18n="f2_t">Quattro modalità di tema</h3><p data-i18n="f2_d">Dinamico, Filtro, Filtro+ e Statico. Scegli un'opzione diversa per sito ogni volta che si adatta meglio.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"/><circle cx="4" cy="12" r="2"/><circle cx="12" cy="10" r="2"/><circle cx="20" cy="14" r="2"/></svg></div><h3 data-i18n="f3_t">Regole per sito</h3><p data-i18n="f3_d">Abilita, disabilita o regola con precisione qualsiasi sito, fino a una singola sezione come example.com/docs.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3 data-i18n="f4_t">Pianificazione intelligente</h3><p data-i18n="f4_d">Segui l'aspetto del tuo sistema, una finestra temporale o dal tramonto all'alba nella tua posizione.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 8.7l5.4-.8z"/></svg></div><h3 data-i18n="f5_t">Predefiniti</h3><p data-i18n="f5_d">Attenuato, Mezzanotte, Ardesia, Notte seppia e Alto contrasto. Un clic ciascuno.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l4-1 11-11-3-3L5 16l-1 4z"/><path d="M13 6l3 3"/></svg></div><h3 data-i18n="f6_t">CSS personalizzato e font</h3><p data-i18n="f6_d">Inietta il tuo CSS personalizzato per sito, sovrascrivi i font della pagina e accentua il testo con uno stroke.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M15 3.5A9 9 0 0 1 20.5 9"/><path d="M9 12l2 2 4-4"/></svg></div><h3 data-i18n="f7_t">Rileva i siti già scuri</h3><p data-i18n="f7_d">I siti che pubblicano il proprio tema scuro vengono rilevati e lasciati invariati, senza un raddoppio dell'oscurità.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3 data-i18n="f8_t">Privato per design</h3><p data-i18n="f8_d">Nessun account, nessuna analisi, nessun tracciamento. Nulla sulla tua navigazione lascia mai il tuo dispositivo.</p></div>
-            </div>
-            <div class="features-list">
+            <div class="grid primary-grid"><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></div><h3 data-i18n="f1_t">Modalità dinamica</h3><p data-i18n="f1_d">Legge i colori propri di ogni sito e li ricostruisce in modalità scura. Le foto restano fedeli, il testo rimane leggibile.</p></div><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div><h3 data-i18n="f2_t">Quattro modalità di tema</h3><p data-i18n="f2_d">Inizia con Dynamic. Prova Filter o Filter+ se una pagina richiede un approccio diverso, oppure Static per scegliere i tuoi colori.</p></div><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"/><circle cx="4" cy="12" r="2"/><circle cx="12" cy="10" r="2"/><circle cx="20" cy="14" r="2"/></svg></div><h3 data-i18n="f3_t">Regole per sito</h3><p data-i18n="f3_d">Abilita, disabilita o regola con precisione qualsiasi sito, fino a una singola sezione come example.com/docs.</p></div><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3 data-i18n="f4_t">Pianificazione intelligente</h3><p data-i18n="f4_d">Segui l'aspetto del tuo sistema, una finestra temporale o dal tramonto all'alba nella tua posizione.</p></div></div>
+            <details class="feature-reference"><summary data-i18n="details_controls">Altri controlli</summary><div class="grid"><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 8.7l5.4-.8z"/></svg></div><h3 data-i18n="f5_t">Predefiniti</h3><p data-i18n="f5_d">Attenuato, Mezzanotte, Ardesia, Notte seppia e Alto contrasto. Un clic ciascuno.</p></div><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l4-1 11-11-3-3L5 16l-1 4z"/><path d="M13 6l3 3"/></svg></div><h3 data-i18n="f6_t">CSS personalizzato e font</h3><p data-i18n="f6_d">Inietta il tuo CSS personalizzato per sito, sovrascrivi i font della pagina e accentua il testo con uno stroke.</p></div><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M15 3.5A9 9 0 0 1 20.5 9"/><path d="M9 12l2 2 4-4"/></svg></div><h3 data-i18n="f7_t">Rileva i siti già scuri</h3><p data-i18n="f7_d">I siti che pubblicano il proprio tema scuro vengono rilevati e lasciati invariati, senza un raddoppio dell'oscurità.</p></div><div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3 data-i18n="f8_t">Privato per design</h3><p data-i18n="f8_d">L’estensione non raccoglie la cronologia di navigazione e non la invia allo sviluppatore. Senza account, analisi o tracciamento.</p></div></div><div class="features-list">
                 <div class="feature-row">
                     <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-5M4 12V3M12 21v-9M12 8V3M20 21v-3M20 14V3"/><circle cx="4" cy="14" r="2"/><circle cx="12" cy="10" r="2"/><circle cx="20" cy="16" r="2"/></svg></div>
                     <div class="feature-row__body">
@@ -299,7 +304,7 @@
                     <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="9" cy="10" r="2"/><path d="M15 8l3 3-3 3"/></svg></div>
                     <div class="feature-row__body">
                         <h3 data-i18n="fl2_t">Gestione intelligente del logo</h3>
-                        <p data-i18n="fl2_d">I loghi e le icone scuri vengono analizzati pixel per pixel e invertiti solo quando ciò è utile, così le foto non vengono mai modificate.</p>
+                        <p data-i18n="fl2_d">La modalità dinamica gestisce le immagini separatamente dai colori della pagina. Controlla il risultato quando scegli un’altra modalità.</p>
                     </div>
                 </div>
                 <div class="feature-row">
@@ -319,7 +324,7 @@
                 <div class="feature-row">
                     <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="M8 10h8M8 14h5"/></svg></div>
                     <div class="feature-row__body">
-                        <h3 data-i18n="fl5_t">Form leggibili ovunque</h3>
+                        <h3 data-i18n="fl5_t">Moduli in linea con il tema</h3>
                         <p data-i18n="fl5_d">I campi di input, i menu a tendina, le barre di scorrimento e persino i campi compilati automaticamente rispettano il tema, senza lampeggiare in bianco o giallo.</p>
                     </div>
                 </div>
@@ -344,7 +349,7 @@
                         <p data-i18n="fl8_d">Disponibile in inglese, spagnolo, francese, tedesco, giapponese, coreano, cinese, arabo e 25 altre lingue.</p>
                     </div>
                 </div>
-            </div>
+            </div></details>
         </section>
 
         <section class="wrap block" id="how">
@@ -353,7 +358,7 @@
             <div class="steps">
                 <div class="step"><div class="stepnum">1</div><h3 data-i18n="how1_t">Installa dall'App Store</h3><p data-i18n="how1_d">Scarica Night Crow. È un'estensione nativa per Safari, leggera e ottimizzata.</p></div>
                 <div class="step"><div class="stepnum">2</div><h3 data-i18n="how2_t">Abilita in Safari</h3><p data-i18n="how2_d">Apri le Impostazioni di Safari, vai su Estensioni, attiva Night Crow e consentilo sui siti web.</p></div>
-                <div class="step"><div class="stepnum">3</div><h3 data-i18n="how3_t">Naviga nel buio</h3><p data-i18n="how3_d">Ogni sito diventa scuro automaticamente. Regola qualsiasi pagina direttamente dal popup della barra degli strumenti.</p></div>
+                <div class="step"><div class="stepnum">3</div><h3 data-i18n="how3_t">Naviga nel buio</h3><p data-i18n="how3_d">Visita i siti consentiti e regola il loro aspetto dalla barra degli strumenti.</p></div>
             </div>
         </section>
 
@@ -361,10 +366,9 @@
             <div class="label" data-i18n="sec_why_label">Perché Night Crow</div>
             <h2 class="title" data-i18n="sec_why_title">Progettato per gli utenti di Safari</h2>
             <div class="why-grid">
-                <div class="why-card"><h3 data-i18n="why1_t">Le foto rimangono belle</h3><p data-i18n="why1_d">La modalità Dinamica ricostruisce i colori invece di invertire l'intera pagina, così le immagini e i video mantengono i loro colori reali.</p></div>
-                <div class="why-card"><h3 data-i18n="why2_t">Leggibile, sempre</h3><p data-i18n="why2_d">Un livello minimo di contrasto percettivo mantiene il testo rimappato leggibile su ogni sito, anche dove gli autori tagliano gli angoli.</p></div>
+                <div class="why-card"><h3 data-i18n="why2_t">Leggibilità regolabile</h3><p data-i18n="why2_d">Cambia modalità o regola il contrasto quando una pagina richiede un trattamento diverso.</p></div>
                 <div class="why-card"><h3 data-i18n="why3_t">Parla la tua lingua</h3><p data-i18n="why3_d">Completamente localizzato in 33 lingue: il popup, le impostazioni, l'onboarding e questa pagina.</p></div>
-                <div class="why-card"><h3 data-i18n="why4_t">Paga una volta</h3><p data-i18n="why4_d">Vostro per sempre al prezzo di una sorseggiata di caffè. Nessun abbonamento, nessuna pubblicità, nessun up-sell.</p></div>
+                <div class="why-card"><h3 data-i18n="why4_t">Paga una volta</h3><p data-i18n="why4_d">Un solo acquisto. Senza abbonamenti, pubblicità o acquisti aggiuntivi.</p></div>
             </div>
         </section>
 
@@ -391,8 +395,8 @@
         </div>
     </footer>
 
-    <script src="../../translations.js"></script>
-    <script src="../../i18n.js"></script>
+    <script src="../../translations.js?v=review-20261103"></script>
+    <script src="../../i18n.js?v=review-20261103-routing"></script>
     <script src="../../carousel.js"></script>
   <script src="../../gallery.js" defer></script>
 </body>
